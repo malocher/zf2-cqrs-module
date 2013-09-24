@@ -11,12 +11,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/crafics/cqrs-php.git",
-                "reference": "15a94dfb196781b0eee7c3b6f459c934044e9e19"
+                "reference": "616f1a8711600ae684475776f7d5c93f77139527"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/crafics/cqrs-php/zipball/15a94dfb196781b0eee7c3b6f459c934044e9e19",
-                "reference": "15a94dfb196781b0eee7c3b6f459c934044e9e19",
+                "url": "https://api.github.com/repos/crafics/cqrs-php/zipball/616f1a8711600ae684475776f7d5c93f77139527",
+                "reference": "616f1a8711600ae684475776f7d5c93f77139527",
                 "shasum": ""
             },
             "require": {
@@ -36,7 +36,7 @@
                 "source": "https://github.com/crafics/cqrs-php/tree/master",
                 "issues": "https://github.com/crafics/cqrs-php/issues"
             },
-            "time": "2013-09-24 18:43:58"
+            "time": "2013-09-24 21:13:38"
         },
         {
             "name": "doctrine/annotations",
