@@ -1,0 +1,33 @@
+{
+    "name": "codeliner/zf2-cqrs-module",
+    "description": "PHP CQRS integration for Zend Framework 2",
+    "type": "library",
+    "license": "BSD-3-Clause",    
+    "homepage": "http://www.codeliner.ws/",
+    "authors": [
+        {
+            "name": "Alexander Miertsch",
+            "email": "kontakt@codeliner.ws",
+            "homepage": "http://www.codeliner.ws/"
+        }
+    ],
+    "keywords": [
+        "cqrs",
+        "zf2",
+        "framework"
+    ],
+    "autoload": {
+        "psr-0": {
+            "CqrsModule\\": "src/"
+        }
+    },
+    "repositories": [{
+        "type": "vcs",
+        "url": "http://github.com/crafics/cqrs-php"
+    }],
+    "require": {
+        "php": ">=5.4.0",
+        "zendframework/zendframework" : "2.*",
+        "crafics/cqrs-php": "dev-master"
+    }
+}
