@@ -28,7 +28,7 @@ class GateFactory implements FactoryInterface
         
         $cqrsConfig = $configuration['cqrs'];
         
-        $gate = Gate::getInstance();
+        $gate = new Gate();
         
         $cqrsSetup = new Setup();
         
