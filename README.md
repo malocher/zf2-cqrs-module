@@ -55,7 +55,10 @@ class MyController extends AbstractActionController {
     
     $addEntityCommand->setName($entityName);
     
-    $this->getServiceLocator()->get('cqrs.gate')->getBus(DomainBus::NAME)->invokeCommand($addEntityCommand);
+    $this->getServiceLocator()
+      ->get('cqrs.gate')
+      ->getBus(DomainBus::NAME)
+      ->invokeCommand($addEntityCommand);
   }
 }
 ```
