@@ -49,8 +49,6 @@ class MyController extends AbstractActionController {
 
   public function addEntityAction() {
   
-    $gate = $this->getServiceLocator()->get('cqrs.gate');
-    
     $entityName = $this->getEvent()->getRouteMatch()->getParam('entityname');
     
     $addEntityCommand = new AddEntityCommand();
