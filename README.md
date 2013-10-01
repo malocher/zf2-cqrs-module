@@ -7,7 +7,7 @@ Zend Framework 2 Module that integrates the [crafics CQRS + Events System](https
 
 
 Setup the CQRS System using your module or application configuration. Put all CQRS options under the key cqrs. 
-  
+```php
   'cqrs' => array(
         'adapters' => array(
             array(
@@ -28,7 +28,7 @@ Setup the CQRS System using your module or application configuration. Put all CQ
             'my_add_entity_command_handler' => 'My\Repository\EntityRepository',
         ),
     ),
-    
+```
 The ZF2 ServiceManager acts as CommandHandler- and EventListenerLoader. That means, you can use your ServiceManager aliases
 to pipe your commands and events to your repositories, services and whatever you use in your application.
 
