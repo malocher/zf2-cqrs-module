@@ -28,6 +28,6 @@
     "require": {
         "php": ">=5.4.0",
         "zendframework/zendframework" : "2.*",
-        "crafics/cqrs-php": "master"
+        "crafics/cqrs-php": "dev-master"
     }
 }
