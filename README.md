@@ -46,8 +46,8 @@ Setup the CQRS System using your module or application configuration. Put all CQ
         ),
     ),
 ```
-The ZF2 ServiceManager acts as CommandHandler- and EventListenerLoader. That means, you can use your ServiceManager aliases
-to pipe your commands and events to your repositories, services and whatever you use in your application.
+The ZF2 ServiceManager acts as Handler- and EventListenerLoader. That means, you can use your ServiceManager aliases
+to pipe your commands, queries and events to your repositories, services and whatever you use in your application.
 
 ##Usage
 
