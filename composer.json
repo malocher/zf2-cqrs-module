@@ -20,11 +20,7 @@
         "psr-0": {
             "CqrsModule\\": "src/"
         }
-    },
-    "repositories": [{
-        "type": "vcs",
-        "url": "https://github.com/crafics/cqrs-php.git"
-    }],
+    },    
     "require": {
         "php": ">=5.4.0",
         "zendframework/zendframework" : "2.*",

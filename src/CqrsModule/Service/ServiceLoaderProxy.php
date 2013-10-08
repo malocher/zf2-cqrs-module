@@ -9,12 +9,16 @@ namespace CqrsModule\Service;
 
 use Cqrs\Command\CommandHandlerLoaderInterface;
 use Cqrs\Event\EventListenerLoaderInterface;
+use Cqrs\Query\QueryHandlerLoaderInterface;
 use Zend\ServiceManager\ServiceLocatorAwareInterface;
 use Zend\ServiceManager\ServiceLocatorInterface;
 
 
 class ServiceLoaderProxy 
-    implements CommandHandlerLoaderInterface, EventListenerLoaderInterface, ServiceLocatorAwareInterface
+    implements CommandHandlerLoaderInterface, 
+        EventListenerLoaderInterface, 
+        QueryHandlerLoaderInterface,
+        ServiceLocatorAwareInterface
 {
     /**
      *
@@ -27,6 +31,11 @@ class ServiceLoaderProxy
     {
         return $this->getServiceLocator()->get($alias);
     }
+    
+    public function getQueryHandler($alias)
+    {
+        return $this->getServiceLocator()->get($alias);
+    } 
 
     public function getEventListener($alias)
     {
@@ -41,5 +50,5 @@ class ServiceLoaderProxy
     public function setServiceLocator(ServiceLocatorInterface $serviceLocator)
     {
         $this->serviceLocator = $serviceLocator;
-    }    
+    }
 }

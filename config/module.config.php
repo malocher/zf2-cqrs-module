@@ -9,6 +9,7 @@ return array(
         ),
         'aliases' => array(
             'cqrs.command_handler_loader' => 'cqrs.service_loader_proxy',
+            'cqrs.query_handler_loader'   => 'cqrs.service_loader_proxy',
             'cqrs.event_listener_loader'  => 'cqrs.service_loader_proxy',
         )
     ),
