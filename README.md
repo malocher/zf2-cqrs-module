@@ -27,8 +27,7 @@ Setup the CQRS System using your module or application configuration. Put all CQ
 ```php
   'cqrs' => array(
         'adapters' => array(
-            array(
-                'class' => 'Cqrs\Adapter\ArrayMapAdapter',
+            'Cqrs\Adapter\ArrayMapAdapter' => array(
                 'buses' => array(
                     'My\Bus\DomainBus' => array(
                         'My\Command\AddEntityCommand' => array(
