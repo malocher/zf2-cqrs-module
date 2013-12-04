@@ -5,7 +5,7 @@ Zend Framework 2 Module that integrates the [Malocher CQRS + Service Bus](https:
 
 ## Installation
 
-Installation of CqrsModule uses composer. For composer documentation, please refer to
+Installation of MalocherCqrsModule uses composer. For composer documentation, please refer to
 [getcomposer.org](http://getcomposer.org/). Add following requirement to your composer.json
 
 
