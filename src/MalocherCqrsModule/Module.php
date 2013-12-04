@@ -5,7 +5,7 @@
  * @author Alexander Miertsch <kontakt@codeliner.ws>
  * @copyright (c) 2013, Alexander Miertsch
  */
-namespace CqrsModule;
+namespace MalocherCqrsModule;
 
 class Module
 {

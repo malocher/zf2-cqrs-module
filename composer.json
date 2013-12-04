@@ -1,24 +1,30 @@
 {
-    "name": "codeliner/zf2-cqrs-module",
-    "description": "PHP CQRS integration for Zend Framework 2",
+    "name": "malocher/zf2-cqrs-module",
+    "description": "PHP CQRS + Service Bus integration for Zend Framework 2",
     "type": "library",
     "license": "BSD-3-Clause",    
-    "homepage": "http://www.codeliner.ws/",
+    "homepage": "https://github.com/Malocher/zf2-cqrs-module",
     "authors": [
         {
             "name": "Alexander Miertsch",
             "email": "kontakt@codeliner.ws",
             "homepage": "http://www.codeliner.ws/"
+        },
+        {
+            "name": "Manfred Weber",
+            "email": "crafics@php.net",
+            "homepage": "http://dschini.org/"
         }
     ],
     "keywords": [
         "cqrs",
+        "esb",
         "zf2",
         "framework"
     ],
     "autoload": {
         "psr-0": {
-            "CqrsModule\\": "src/"
+            "MalocherCqrsModule\\": "src/"
         }
     },    
     "require": {

@@ -2,15 +2,15 @@
 return array(
     'service_manager' => array(
         'invokables' => array(
-            'cqrs.service_loader_proxy' => 'CqrsModule\Service\ServiceLoaderProxy'
+            'malocher.cqrs.service_loader_proxy' => 'MalocherCqrsModule\Service\ServiceLoaderProxy'
         ),
         'factories' => array(
-            'cqrs.gate' => 'CqrsModule\Service\GateFactory',
+            'malocher.cqrs.gate' => 'MalocherCqrsModule\Service\GateFactory',
         ),
         'aliases' => array(
-            'cqrs.command_handler_loader' => 'cqrs.service_loader_proxy',
-            'cqrs.query_handler_loader'   => 'cqrs.service_loader_proxy',
-            'cqrs.event_listener_loader'  => 'cqrs.service_loader_proxy',
+            'malocher.cqrs.command_handler_loader' => 'malocher.cqrs.service_loader_proxy',
+            'malocher.cqrs.query_handler_loader'   => 'malocher.cqrs.service_loader_proxy',
+            'malocher.cqrs.event_listener_loader'  => 'malocher.cqrs.service_loader_proxy',
         )
     ),
 );

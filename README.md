@@ -1,7 +1,7 @@
 zf2-cqrs-module
 ===============
 
-Zend Framework 2 Module that integrates the [crafics CQRS + Events System](https://github.com/crafics/cqrs-php)
+Zend Framework 2 Module that integrates the [Malocher CQRS + Service Bus](https://github.com/malocher/cqrs-esb)
 
 ## Installation
 
@@ -10,12 +10,12 @@ Installation of CqrsModule uses composer. For composer documentation, please ref
 
 
 ```sh
-"codeliner/zf2-cqrs-module" : "dev-master"
+"malocher/zf2-cqrs-module" : "dev-master"
 ```
 
 and set `minimum-stability` to `dev`
 
-Then add `CqrsModule` to your `config/application.config.php``
+Then add `MalocherCqrsModule` to your `config/application.config.php``
 
 Installation without composer is not officially supported, and requires you to install and autoload
 the dependencies specified in the `composer.json`.
@@ -27,7 +27,7 @@ Setup the CQRS System using your module or application configuration. Put all CQ
 ```php
   'cqrs' => array(
         'adapters' => array(
-            'Cqrs\Adapter\ArrayMapAdapter' => array(
+            'Malocher\Cqrs\Adapter\ArrayMapAdapter' => array(
                 'buses' => array(
                     'My\Bus\DomainBus' => array(
                         'My\Command\AddEntityCommand' => array(
@@ -50,7 +50,7 @@ to pipe your commands, queries and events to your repositories, services and wha
 
 ##Usage
 
-You can request the CQRS Gate from the ServiceManager. The hole setup of the CQRS System is done in the background.
+You can request the Malocher CQRS Gate from the ServiceManager. The hole setup of the CQRS and Service Bus System is done in the background.
 Here is a simple example that invokes the AddEntityCommand on the DomainBus from within a controller:
 
 ```php
@@ -72,7 +72,7 @@ class MyController extends AbstractActionController {
     $addEntityCommand->setName($entityName);
     
     $this->getServiceLocator()
-      ->get('cqrs.gate')
+      ->get('malocher.cqrs.gate')
       ->getBus(DomainBus::NAME)
       ->invokeCommand($addEntityCommand);
   }

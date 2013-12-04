@@ -5,7 +5,7 @@
  * @author Alexander Miertsch <kontakt@codeliner.ws>
  * @copyright (c) 2013, Alexander Miertsch
  */
-namespace CqrsModule\Service;
+namespace MalocherCqrsModule\Service;
 
 use Malocher\Cqrs\Command\CommandHandlerLoaderInterface;
 use Malocher\Cqrs\Event\EventListenerLoaderInterface;
