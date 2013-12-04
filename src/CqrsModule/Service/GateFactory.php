@@ -9,8 +9,8 @@ namespace CqrsModule\Service;
 
 use Zend\ServiceManager\FactoryInterface;
 use Zend\ServiceManager\ServiceLocatorInterface;
-use Cqrs\Gate;
-use Cqrs\Configuration\Setup;
+use Malocher\Cqrs\Gate;
+use Malocher\Cqrs\Configuration\Setup;
 
 class GateFactory implements FactoryInterface
 {

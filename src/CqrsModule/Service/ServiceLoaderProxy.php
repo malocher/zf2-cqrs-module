@@ -7,9 +7,9 @@
  */
 namespace CqrsModule\Service;
 
-use Cqrs\Command\CommandHandlerLoaderInterface;
-use Cqrs\Event\EventListenerLoaderInterface;
-use Cqrs\Query\QueryHandlerLoaderInterface;
+use Malocher\Cqrs\Command\CommandHandlerLoaderInterface;
+use Malocher\Cqrs\Event\EventListenerLoaderInterface;
+use Malocher\Cqrs\Query\QueryHandlerLoaderInterface;
 use Zend\ServiceManager\ServiceLocatorAwareInterface;
 use Zend\ServiceManager\ServiceLocatorInterface;
 
