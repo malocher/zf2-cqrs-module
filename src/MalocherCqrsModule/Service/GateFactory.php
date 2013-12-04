@@ -33,9 +33,9 @@ class GateFactory implements FactoryInterface
         $cqrsSetup = new Setup();
         
         $cqrsSetup->setGate($gate);
-        $cqrsSetup->setCommandHandlerLoader($serviceLocator->get('cqrs.command_handler_loader'));
-        $cqrsSetup->setQueryHandlerLoader($serviceLocator->get('cqrs.query_handler_loader'));
-        $cqrsSetup->setEventListenerLoader($serviceLocator->get('cqrs.event_listener_loader'));
+        $cqrsSetup->setCommandHandlerLoader($serviceLocator->get('malocher.cqrs.command_handler_loader'));
+        $cqrsSetup->setQueryHandlerLoader($serviceLocator->get('malocher.cqrs.query_handler_loader'));
+        $cqrsSetup->setEventListenerLoader($serviceLocator->get('malocher.cqrs.event_listener_loader'));
         $cqrsSetup->initialize($cqrsConfig);
         
         return $gate;
