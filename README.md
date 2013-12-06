@@ -3,6 +3,8 @@ zf2-cqrs-module
 
 Zend Framework 2 Module that integrates the [Malocher CQRS + Service Bus](https://github.com/malocher/cqrs-esb)
 
+[![Build Status](https://travis-ci.org/malocher/zf2-cqrs-module.png?branch=master)](https://travis-ci.org/malocher/zf2-cqrs-module)
+
 ## Installation
 
 Installation of MalocherCqrsModule uses composer. For composer documentation, please refer to
