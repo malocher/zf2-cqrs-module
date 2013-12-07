@@ -3,7 +3,7 @@
     "description": "PHP CQRS + Service Bus integration for Zend Framework 2",
     "type": "library",
     "license": "BSD-3-Clause",    
-    "homepage": "https://github.com/Malocher/zf2-cqrs-module",
+    "homepage": "https://github.com/malocher/zf2-cqrs-module",
     "authors": [
         {
             "name": "Alexander Miertsch",
