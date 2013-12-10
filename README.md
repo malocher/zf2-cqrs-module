@@ -12,10 +12,8 @@ Installation of MalocherCqrsModule uses composer. For composer documentation, pl
 
 
 ```sh
-"malocher/zf2-cqrs-module" : "dev-master"
+"malocher/zf2-cqrs-module" : "1.*"
 ```
-
-and set `minimum-stability` to `dev`
 
 Then add `MalocherCqrsModule` to your `config/application.config.php``
 
