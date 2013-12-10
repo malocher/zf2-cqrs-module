@@ -3,11 +3,11 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "e84e2b5b0521213eb5b13056c4f0a96c",
+    "hash": "a93d76ab95547238596b47306561c5df",
     "packages": [
         {
             "name": "malocher/cqrs-esb",
-            "version": "dev-master",
+            "version": "1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/malocher/cqrs-esb.git",
@@ -593,9 +593,9 @@
 
     ],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "malocher/cqrs-esb": 20
-    },
+    "stability-flags": [
+
+    ],
     "platform": {
         "php": ">=5.4.0"
     },

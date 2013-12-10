@@ -30,7 +30,7 @@
     "require": {
         "php": ">=5.4.0",
         "zendframework/zendframework" : "2.*",
-        "malocher/cqrs-esb": "dev-master"
+        "malocher/cqrs-esb": "1.0.*"
     },
     "require-dev" : {
         "phpunit/phpunit": "3.7.*"
