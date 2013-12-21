@@ -1,5 +1,5 @@
-zf2-cqrs-module
-===============
+MalocherCqrsModule
+==================
 
 Zend Framework 2 Module that integrates the [Malocher CQRS + Service Bus](https://github.com/malocher/cqrs-esb)
 
